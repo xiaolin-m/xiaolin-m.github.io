@@ -827,9 +827,22 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  padding-bottom: 8px;
 }
 
+.timeline-text a {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-decoration: underline;
+  display: inline; /* or display: inline-block; */
+  /* You can also add some spacing between the links if desired */
+  margin-right: 10px; /* Adjust the value as needed */
+}
 
+.timeline-text a:hover {
+  color: var(--orange-yellow-crayola);
+}
 /**
  * skills 
  */
@@ -1122,7 +1135,7 @@ main {
   #CONTACT
 \*-----------------------------------*/
 
-.mapbox {
+/* .mapbox {
   position: relative;
   height: 250px;
   width: 100%;
@@ -1219,7 +1232,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover { background: var(--border-gradient-onyx); }
 
-.form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+.form-btn:disabled:hover::before { background: var(--bg-gradient-jet); } */
 
 
 
@@ -1518,7 +1531,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #CONTACT
    */
 
-  .mapbox {
+  /* .mapbox {
     height: 380px;
     border-radius: 18px;
   }
@@ -1539,7 +1552,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn ion-icon { font-size: 18px; }
 
-}
+} */
 
 
 
@@ -1736,7 +1749,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
-  .clients-item { min-width: calc(25% - 38px); }
+  .clients-item { 
+    min-width: calc(25% - 38px); 
+    margin:auto;
+  }
 
 
 
